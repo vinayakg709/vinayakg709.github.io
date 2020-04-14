@@ -2,11 +2,23 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
-
+<!-- <meta http-equiv="refresh" content="1"> -->
+<link rel="stylesheet" href="space.css">
 <style>
-body{background-image: url("./images/load img.png");
-    background-repeat: no-repeat;
+    body{
+        background-image: url("./images/body bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+canvas {
+    border:1px solid hsl(0, 0%, 83%);
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+
 }
 button {
   filter: drop-shadow(0 1px 1px  rgba(#fff, 0));
@@ -19,9 +31,10 @@ button {
   animation-duration: 5s;
   animation-timing-function: ease-in;
   cursor: pointer;
-  margin-top: 500px;
-  margin-left: 850px;
+  margin-left: 10px;
   box-shadow :8px 0 18px 4px #fff, 83px 0 12px 1px transparent;
+  margin-top: 0px;
+  
   
 }
 button:hover {
@@ -44,14 +57,10 @@ a {
   6% {left: 3px}
   7% {left: 0}
 }
-
-
 </style>
 </head>
-<body>
-    
-     <button ><a href="space.html" > START >>> </a></button>
-
-    
+<body onload="startGame()">
+<script src="space.js"></script>
+<button onclick="startGame()" > *RESTART* </button>
 </body>
 </html>
